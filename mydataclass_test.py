@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.13
 import unittest
 from mydataclass import MyDataClass
 

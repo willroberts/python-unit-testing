@@ -1,4 +1,5 @@
-from typing import NewType, Optional
+#!/usr/bin/env python3.13
+from typing import NewType, Optional, Self
 
 Vector = list[int]  # Type alias
 SpecialValue = NewType('SpecialValue', int)  # Distinct type
@@ -9,7 +10,7 @@ class MyClass(object):
     # Becomes _classname__value to avoid collision with subclasses
     __value: int = 0
 
-    def __init__(self, v: int):  # Use `-> Self` in Python 3.11+
+    def __init__(self, v: int) -> Self:
         self.value: int = v  # Instance variable
         self._value: int = v  # Private variable
         self.vector: Vector = [v]
@@ -20,7 +21,7 @@ class MyClass(object):
 
 
 class MySubClass(MyClass):
-    def __init__(self, v: int):  # Use `-> Self` in Python 3.11+
+    def __init__(self, v: int) -> Self:
         super().__init__(v)
 
 if __name__ == '__main__':
