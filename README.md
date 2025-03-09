@@ -1,8 +1,8 @@
 # Python Unit Testing
 
-## Changes in Python 3.x Releases
+Run unit tests with `python3 -m unittest myclass_test mydataclass_test`.
 
-### Python 3.10
+### New in Python 3.10
 
 - Pattern matching:
 ```python3
@@ -21,7 +21,7 @@ MyType: TypeAlias: "ClassName"
 def foo() -> MyType: ...
 ```
 
-### Python 3.11
+### New in Python 3.11
 
 - TOML in standard library with `tomllib`
 - `ExceptionGroup` and `except*` for simultanous exception handling
@@ -52,7 +52,7 @@ class MyLock:
 ```
 - The `LiteralString` type enforces non-arbitrary strings
 
-### Python 3.12
+### New in Python 3.12
 
 - Simplified syntax for generics (compare to 3.11 example):
 ```python3
@@ -79,7 +79,7 @@ class Invalid:
     def get_colour(self) -> str: return "blue"
 ```
 
-### Python 3.13
+### New in Python 3.13
 
 - Type parameters (`TypeVar`, `ParamSpec`, `TypeVarTuple`) now support defaults
 - New `warnings.deprecated()` decorator
